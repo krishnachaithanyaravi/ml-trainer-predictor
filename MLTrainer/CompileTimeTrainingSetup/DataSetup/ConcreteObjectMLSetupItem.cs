@@ -166,6 +166,7 @@ namespace MLTrainer.CompileTimeTrainingSetup.DataSetup
 
         protected override bool FilterAlgorithm(IMLTrainingAlgorithm trainingAlgorithm)
         {
+            return true;
             bool filter = false;
             ForEachColumnNameStorageAttributeOf<ModelInput>(col =>
             {

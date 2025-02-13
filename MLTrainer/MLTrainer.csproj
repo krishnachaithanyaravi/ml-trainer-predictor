@@ -294,6 +294,9 @@
     <Compile Include="Demo\IrisPrediction\IrisClassificationOutput.cs" />
     <Compile Include="Demo\IrisPrediction\IrisClassificationSetupItem.cs" />
     <Compile Include="Demo\IrisPrediction\IrisInput.cs" />
+    <Compile Include="Demo\TaxiFare\TaxiFareInput.cs" />
+    <Compile Include="Demo\TaxiFare\TaxiFareOutput.cs" />
+    <Compile Include="Demo\TaxiFare\TaxiFareSetupItem.cs" />
     <Compile Include="Forms\AutoSelectTrainingAlgorithmForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -330,8 +333,8 @@
     <Compile Include="RuntimeTrainingSetup\DynamicObjectPredictor\DynamicObjectModelPredictor.cs" />
     <Compile Include="CompileTimeTrainingSetup\ConcreteObjectTrainer\ConcreteObjectModelTrainer.cs" />
     <Compile Include="RuntimeTrainingSetup\DynamicObjectTrainer\DynamicObjectModelTrainer.cs" />
-    <Compile Include="TensorflowTrainingAlgorithms\SequentialTrainer.cs" />
-    <Compile Include="TensorflowTrainingAlgorithms\TensorflowTrainingAlgorithmBase.cs" />
+    <!-->Compile Include="TensorflowTrainingAlgorithms\SequentialTrainer.cs" />
+    <Compile Include="TensorflowTrainingAlgorithms\TensorflowTrainingAlgorithmBase.cs" /-->
     <Compile Include="Trainer\ModelTrainer.cs" />
     <Compile Include="PredictionTesterUI\DataInputItemType\PredictionTesterDataInputFloat.cs" />
     <Compile Include="PredictionTesterUI\DataInputItemType\PredictionTesterDataInputString.cs" />
@@ -342,6 +345,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Trainer\TrainerAccuracyCalculator.cs" />
     <Compile Include="TrainingAlgorithms\AutoSelection\OptimisableObjective.cs" />
+    <Compile Include="TrainingAlgorithms\FastTree\FastTree.cs" />
+    <Compile Include="TrainingAlgorithms\FastTree\FeatureFirstUsePenaltyOption.cs" />
+    <Compile Include="TrainingAlgorithms\FastTree\FeatureFractionOption.cs" />
+    <Compile Include="TrainingAlgorithms\FastTree\LearningRateOption.cs" />
+    <Compile Include="TrainingAlgorithms\FastTree\MaximumBinCountPerFeatureOption.cs" />
+    <Compile Include="TrainingAlgorithms\FastTree\MinimumExampleCountPerLeafOption.cs" />
+    <Compile Include="TrainingAlgorithms\FastTree\NumberOfLeavesOption.cs" />
+    <Compile Include="TrainingAlgorithms\FastTree\NumberOfTreesOption.cs" />
     <Compile Include="TrainingAlgorithms\LbfgsMaximumEntropyAlgorithm\HistorySizeOption.cs" />
     <Compile Include="TrainingAlgorithms\CustomisableOption\ITrainingAlgorithmOption.cs" />
     <Compile Include="TrainingAlgorithms\LbfgsMaximumEntropyAlgorithm\NumberOfThreadsOption.cs" />
@@ -389,6 +400,7 @@
     <None Include="Demo\IrisPrediction\iris.csv" />
     <None Include="Demo\MicroGasTurbineElectricalEnergyPredictionJson\electrical-energy-prediction-json.json" />
     <None Include="Demo\MicroGasTurbineElectricalEnergyPrediction\example.csv" />
+    <None Include="Demo\TaxiFare\taxi-fare-train.csv" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -1,6 +1,6 @@
 ﻿using MLTrainer.DataSetup;
 using MLTrainer.PredictionTesterUI;
-using MLTrainer.TensorflowTrainingAlgorithms;
+//using MLTrainer.TensorflowTrainingAlgorithms;
 using MLTrainer.Trainer;
 using MLTrainer.TrainingAlgorithms;
 using MLTrainer.TrainingAlgorithms.CustomisableOption;
@@ -28,7 +28,7 @@ namespace MLTrainer.Forms
             SetupFunctionalityList();
             SetupAlgorithmList();
 
-            SequentialTrainer trainer = new SequentialTrainer();
+            //SequentialTrainer trainer = new SequentialTrainer();
         }
 
 

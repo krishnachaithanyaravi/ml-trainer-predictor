@@ -3,6 +3,7 @@ using MLTrainer.TrainingAlgorithms.LbfgsPoissonAlgorithm;
 using MLTrainer.TrainingAlgorithms.LightGbmAlgorithm;
 using MLTrainer.TrainingAlgorithms.OneVersusAllAlgorithm;
 using MLTrainer.TrainingAlgorithms.OnlineGradientDescentAlgorithm;
+using MLTrainer.TrainingAlgorithms.FastTreeAlgorithm;
 using System.Collections.Generic;
 namespace MLTrainer.TrainingAlgorithms
 {
@@ -16,6 +17,7 @@ namespace MLTrainer.TrainingAlgorithms
             yield return new OnlineGradientDescent();
             yield return new LbfgsPoisson();
             yield return new LightGbm();
+            yield return new FastTree();
         }
     }
 }
